@@ -16,5 +16,7 @@ export const config = {
             console.error(`Error: ${error.message}`.red.underline.bold);
             process.exit(1);
         }       
-    }
+    },
+    
 }
+
