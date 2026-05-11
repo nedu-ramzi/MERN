@@ -1,6 +1,6 @@
 import asyncHandler from "express-async-handler";
-import Goal from "../Models/goalModel.js";
-import User from "../Models/userModel.js";
+import Goal from "../models/goalModel.js";
+import User from "../models/userModel.js";
 
 
 // @desc  Get goals
