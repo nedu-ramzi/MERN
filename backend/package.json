@@ -4,9 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch backend/server",
-    "dev": "nodemon --env-file=.env backend/server",
-    "docker": "docker build -t mymernapp . && docker run --env-file .env --name myMernApp -p 5000:5000 mymernapp"
+    "start": "node --watch src/server",
+    "dev": "nodemon --env-file=.env -L src/server"
   },
   "keywords": [],
   "author": "",

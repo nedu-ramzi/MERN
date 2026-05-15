@@ -2,10 +2,10 @@
 import express from "express";
 
 //File imports
-import goalRoutes from "../backend/routes/goalRoutes.js";
-import authUserRoutes from "../backend/routes/authUserRoute.js";
-import { errorHandler } from "../backend/middleware/errorMiddleware.js";
-import {config} from "../backend/config/main.js";
+import goalRoutes from "./routes/goalRoutes.js";
+import authUserRoutes from "./routes/authUserRoute.js";
+import { errorHandler } from "./middleware/errorMiddleware.js";
+import {config} from "./config/main.js";
 
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.json({ message: `MERN APP is running on port ${process.env.PORT}...` });
+  res.json({ message: `MERN APP is running on port ${process.env.PORT}` });
 });
 
 app.use('/api/goals', goalRoutes);

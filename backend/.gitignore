@@ -1,0 +1,10 @@
+.env
+node_modules
+.vscode
+
+#"docker": "docker rm -f myMernApp & docker build -t mymernapp . && docker run --env-file .env --name myMernApp -p 4000:4000 -v %cd%:/backend -v /backend/node_modules mymernapp"
+
+# Docker commands
+# docker compose up --build -d
+# docker compose down
+# docker compose logs -f  (shows logs in real time) 
